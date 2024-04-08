@@ -1,32 +1,16 @@
-# https://www.youtube.com/watch?v=HSudt-fQnDI&list=PLAzlSdU-KYwUG_5HcRVT4mr0vgLYBeFnm&index=51
-class Vehiculo
-  # - atrivutos
-  def initialize(color, marca)
-    @color = color
-    @marca = marca
-  end
-  # - metodos
-  def arrancar
-    puts "El Vehiculo #{@marca} a encendido con el color: #{@color}"
-  end
+# decimoles a ruby que querem,os modificar la claseString
 
-  def apagar
-    puts "El Vehiculo #{@marca} con el color: #{@color} se apagó"
+class String
+  def numero_caracteres
+    puts self.size
   end
 end
 
-ferrary = Vehiculo.new('Rojo', 'ferrary')
-puts ferrary.arrancar
-puts ferrary.apagar
+text = 'Curso de ruby es el mejor'
 
-class Automovil < Vehiculo
-  # AQUI SE SOBRE CARGA EL METODO
-  def arrancar(seg)
-    puts "El Vehiculo #{@marca} a encendido con el color: #{@color} en #{seg}s"
-  end
+puts text.length
+puts text.class
 
-end
-
-newAuto = Automovil.new('Rojo', 'vmw')
-
-puts newAuto.arrancar(3)
+# luego de modificar con class String
+puts text.numero_caracteres
+puts text.class
