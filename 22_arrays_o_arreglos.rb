@@ -1,10 +1,18 @@
 # frozen_string_literal: true
 
-# TEMA: CICLOS INFINITOS
+# TEMA: ARRAYS O ARREGLOS
 
-# ESTO ES UN ERROR ( CICLOS INFINITOS )
 
-value = 0
-while  value < 10
-  puts 'Hola'
-end
+variable  = 10
+
+array_name = [variable, variable, variable]
+puts array_name
+
+
+# Creamos array de paises
+
+paises = ['Colombia', 'Mexico', 'USA']
+
+puts paises ## lista de array
+puts paises.length ## longitud del array
+puts paises[1] ## sub indices
